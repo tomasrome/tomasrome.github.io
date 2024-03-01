@@ -2,6 +2,64 @@
 import CV from "/CV - Tomás Romero.pdf";
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleClick() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Desplazamiento suave
+      });
+    }
+
+    const homeLink = document.querySelector("#home");
+    if (homeLink) {
+      homeLink.addEventListener("click", handleClick);
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleClick() {
+      window.scrollTo({
+        top: 900,
+        behavior: "smooth", // Desplazamiento suave
+      });
+    }
+
+    const homeLink = document.querySelector("#pro");
+    if (homeLink) {
+      homeLink.addEventListener("click", handleClick);
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleClick() {
+      window.scrollTo({
+        top: 1800,
+        behavior: "smooth", // Desplazamiento suave
+      });
+    }
+
+    const homeLink = document.querySelector("#tech");
+    if (homeLink) {
+      homeLink.addEventListener("click", handleClick);
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleClick() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Desplazamiento suave
+      });
+    }
+
+    const homeLink = document.querySelector("#cont");
+    if (homeLink) {
+      homeLink.addEventListener("click", handleClick);
+    }
+  });
+</script>
+
 <section class="navbar">
   <div class="logoDiv">
     <img src="/tr-logo.png" class="logo" alt="" />
@@ -9,16 +67,16 @@ import CV from "/CV - Tomás Romero.pdf";
   </div>
   <ul class="menu">
     <li>
-      <a href="#">Home</a>
+      <a id="home">Home</a>
     </li>
     <li>
-      <a href="#proyectos">Proyectos</a>
+      <a id="pro">Proyectos</a>
     </li>
     <li>
-      <a href="#tech">Tecnologias</a>
+      <a id="tech">Tecnologias</a>
     </li>
     <li>
-      <a href="#tech">Contacto</a>
+      <a id="cont">Contacto</a>
     </li>
   </ul>
   <ul id="botones" class="linksContainer">
@@ -111,11 +169,7 @@ import CV from "/CV - Tomás Romero.pdf";
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5em;
-  }
-
-  .logo {
-    margin-left: 1.5em;
+    margin-left: 2%;
   }
 
   .effect {
@@ -266,6 +320,19 @@ import CV from "/CV - Tomás Romero.pdf";
       gap: 10px;
       transition: 0.2s;
       display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .effect {
+      font-size: 20px;
+    }
+
+    .btnCv {
+      gap: 2px;
+      font-size: 12px;
+      font-weight: 400;
+      margin-right: 20px;
     }
   }
 </style>

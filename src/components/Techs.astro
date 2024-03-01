@@ -1,1 +1,406 @@
-<h1>Techs</h1>
+---
+
+---
+
+<section class="sectionTech">
+  <article class="skillsContainer">
+    <h1 id="tech" class="tech">-Tecnologias-</h1>
+    <div class="skillsList">
+      <div>
+        <div class="tooltipBox">
+          <img class="html" src="html.svg" alt=" HTML" />
+          <span class="tooltipTextHtml">HTML</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="css" src="css.svg" alt="CSS" />
+          <span class="tooltipTextCss">CSS</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="js" src="js.svg" alt="JavaScript" />
+          <span class="tooltipTextJs">JavaScript</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="react" src="react.svg" alt="React" />
+          <span class="tooltipTextReact">React</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="firebase" src="firebase.svg" alt="Firebase" />
+          <span class="tooltipTextFire">Firebase</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="node" src="node.svg" alt="NodeJs" />
+          <span class="tooltipTextNode">NodeJs</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="git" src="git.svg" alt="Git" />
+          <span class="tooltipTextGit">Git</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="firebase" src="firebase.svg" alt="Firebase" />
+          <span class="tooltipTextFire">Firebase</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="css" src="css.svg" alt="CSS" />
+          <span class="tooltipTextCss">CSS</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
+          <img class="Mysql" src="Mysql.svg" alt="MySQL" />
+          <span class="tooltipTextMysql">MySQL</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .sectionTech {
+    width: 100%;
+    height: 733px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech {
+    padding: 10px 0;
+  }
+
+  .skillsContainer {
+    height: 500px;
+    width: 60%;
+    background-color: #0f172a;
+    border: 5px solid #2c3853;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillsList {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillsList div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillsList img {
+    width: 60px;
+  }
+
+  .html {
+    transition: ease 0.2s;
+  }
+
+  .html:hover {
+    filter: drop-shadow(0 0 2em #e44d26);
+    scale: 1.1;
+  }
+
+  .css {
+    transition: ease 0.2s;
+  }
+
+  .css:hover {
+    filter: drop-shadow(0 0 2em #1572b6);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .js {
+    transition: ease 0.2s;
+  }
+
+  .js:hover {
+    filter: drop-shadow(0 0 1.5em #f0db4f);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .react {
+    transition: ease 0.2s;
+  }
+
+  .react:hover {
+    filter: drop-shadow(0 0 2em #61dafb);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  /*.node{
+background-color: rgba(131, 205, 41, .05);
+border-radius: 20px;
+}*/
+
+  .node {
+    transition: ease 0.2s;
+  }
+
+  .node:hover {
+    filter: drop-shadow(0 0 2em #83cd29);
+    scale: 1.1;
+    /*border: 2px solid #83cd29; */
+  }
+
+  /*.git{
+    background-color: rgba(243, 79, 41, .05);
+    border-radius: 20px;
+    }*/
+
+  .git {
+    transition: ease 0.2s;
+  }
+
+  .git:hover {
+    filter: drop-shadow(0 0 2em #f34f29);
+    scale: 1.1;
+  }
+
+  .firebase {
+    transition: ease 0.2s;
+  }
+
+  .firebase:hover {
+    filter: drop-shadow(0 0 2em #f58220);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .Mysql {
+    transition: ease 0.2s;
+  }
+
+  .Mysql:hover {
+    filter: drop-shadow(0 0 2em #1572b6);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .tooltipBox {
+    position: relative;
+  }
+
+  .tooltipTextCss {
+    background-color: #33a9dc28;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #33a9dc;
+    padding: 5px 20px;
+    color: #33a9dc;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextCss {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextHtml {
+    background-color: #e44d2628;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #e44d26;
+    padding: 5px 20px;
+    color: #e44d26;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextHtml {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextJs {
+    background-color: #f0db4f28;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #f0db4f;
+    padding: 5px 20px;
+    color: #f0db4f;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextJs {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextReact {
+    background-color: #61dafb28;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #61dafb;
+    padding: 5px 20px;
+    color: #61dafb;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextReact {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextNode {
+    background-color: #83cd2928;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #83cd29;
+    padding: 5px 20px;
+    color: #83cd29;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextNode {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextGit {
+    background-color: #f34f2928;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #f34f29;
+    padding: 5px 20px;
+    color: #f34f29;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextGit {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextFire {
+    background-color: #f5822028;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #f58220;
+    padding: 5px 20px;
+    color: #f58220;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextFire {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextMysql {
+    background-color: #38b2ac28;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #00618a;
+    padding: 5px 20px;
+    color: #00618a;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextMysql {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  @media (max-width: 900px) {
+    .skillsList {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(5, minmax(0, 1fr));
+    }
+
+    .skillsContainer {
+      height: 700px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .skillsContainer {
+      width: 80%;
+    }
+  }
+</style>
