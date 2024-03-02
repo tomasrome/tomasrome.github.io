@@ -1,1 +1,257 @@
-<h1>Contact</h1>
+---
+
+---
+
+<section>
+  <header>
+    <div class="header-container">
+      <h1 class="titulo">CONTACTO</h1>
+      <h2 class="titulo2">CONTACTO</h2>
+    </div>
+  </header>
+  <div class="contact-container">
+    <aside>
+      <ul class="redes-list">
+        <li>
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://www.instagram.com/tomif1998/"
+            ><i class="fa-brands fa-instagram"></i>@tomif1998</a
+          >
+        </li>
+
+        <li>
+          <a
+            rel="noreferrer noopener"
+            href="https://www.facebook.com/tomas.flores.5661"
+            target="_blank"><i class="fa-brands fa-facebook"></i>Tomás Flores</a
+          >
+        </li>
+
+        <li>
+          <a href="" target="_blank" rel="noreferrer noopener"
+            ><i class="fa-brands fa-whatsapp"></i>+54 911 4147-4635</a
+          >
+        </li>
+
+        <li>
+          <a href=""
+            ><i class="fa-regular fa-envelope"></i>tomasrom.dev@gmail.com</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <article>
+      <div class="form-container">
+        <form
+          action="https://formsubmit.io/send/romeroatomas@gmail.com
+          "
+          method="POST"
+        >
+          <div class="group-form">
+            <label for="">Nombre</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="group-form">
+            <label for="">Email</label>
+            <input type="email" name="email" />
+          </div>
+
+          <div class="group-form">
+            <label for="">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="10"
+            ></textarea>
+          </div>
+
+          <button class="submit" type="submit"
+            >Enviar <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </article>
+  </div>
+
+  <style>
+    section {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3em 15%;
+      gap: 50px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-container {
+      position: relative;
+    }
+
+    .titulo {
+      font-size: 80px;
+      color: rgba(255, 255, 255, 0.04);
+    }
+
+    .titulo2 {
+      font-size: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .redes-list {
+      color: white;
+      list-style: none;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: start;
+    }
+
+    .redes-list a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color ease 0.3s;
+    }
+
+    .redes-list a:hover {
+      color: #000000;
+    }
+
+    .redes-list i {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    .form-container {
+      width: 150%;
+      height: 500px;
+      background-color: #2c3853;
+      padding: 25px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.44);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .group-form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 6px;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+
+    label {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 0.7vw;
+      border: 1px solid #5d5d5d;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      font-size: 20px;
+      padding: 5px;
+      cursor: pointer;
+      width: 100%;
+      color: white;
+      background-color: #355284;
+      border: none;
+      border-radius: 50px;
+    }
+
+    textarea {
+      border: 1px solid #5d5d5d;
+      border-radius: 0.7vw;
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    #message {
+      overflow: scroll;
+      resize: none;
+      scrollbar-width: none;
+    }
+
+    .submit:hover {
+      background-color: rgba(61, 108, 178);
+    }
+
+    @media screen and (max-width: 600px) {
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .form-container {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 10%;
+        gap: 5px;
+      }
+    }
+  </style>
+</section>

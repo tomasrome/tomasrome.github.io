@@ -4,7 +4,12 @@
 
 <section class="sectionProjects">
   <article class="article">
-    <h2 id="proyectos" class="titulo">MIS PROYECTOS</h2>
+    <header>
+      <div class="header-container">
+        <h1 class="titulo1">PROYECTOS</h1>
+        <h2 class="titulo2">PROYECTOS</h2>
+      </div>
+    </header>
     <div class="cardSection">
       <div class="cardProject">
         <div class="card">
@@ -109,11 +114,10 @@
 <style>
   .sectionProjects {
     width: 100%;
-    height: 893px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
   }
 
   .article {
@@ -127,9 +131,28 @@
     border-radius: 50px;
   }
 
-  .titulo {
-    font-size: 30px;
-    margin-top: 100px;
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .titulo1 {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.04);
+  }
+
+  .titulo2 {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .cardSection {
@@ -148,10 +171,11 @@
     align-items: center;
     transition: ease 0.4s;
     border-radius: 20px;
+    filter: drop-shadow(0 0 1em rgba(61, 108, 178, 0.4));
   }
 
   .cardProject:hover {
-    filter: drop-shadow(0 0 1em rgba(61, 108, 178, 0.531));
+    filter: none;
   }
 
   .card {

@@ -3,8 +3,17 @@
 ---
 
 <section class="sectionTech">
+  <header>
+    <div class="header-container">
+      <h1 class="titulo">TECNOLOGIAS</h1>
+      <h2 class="titulo2">TECNOLOGIAS</h2>
+    </div>
+  </header>
   <article class="skillsContainer">
-    <h1 id="tech" class="tech">-Tecnologias-</h1>
+    <header>
+      Cuento con el manejo de una gran variedad de tecnologias tanto para el
+      trabajo en el fronted como en el backend
+    </header>
     <div class="skillsList">
       <div>
         <div class="tooltipBox">
@@ -81,8 +90,34 @@
     width: 100%;
     height: 733px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .titulo {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.04);
+  }
+
+  .titulo2 {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .tech {
@@ -94,11 +129,17 @@
     width: 60%;
     background-color: #0f172a;
     border: 5px solid #2c3853;
+    filter: drop-shadow(0 0 1em rgba(61, 108, 178, 0.4));
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .skillsContainer header {
+    height: 10 0px;
+    font-size: 20px;
   }
 
   .skillsList {
