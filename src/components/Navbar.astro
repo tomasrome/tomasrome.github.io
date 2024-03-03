@@ -63,7 +63,7 @@ import CV from "/CV - Tomás Romero.pdf";
 <section class="navbar">
   <div class="logoDiv">
     <img src="/tr-logo.png" class="logo" alt="" />
-    <span class="effect">Tomás Romero</span>
+    <span class="effect">TOMÁS <strong>ROMERO</strong></span>
   </div>
   <ul class="menu">
     <li>
@@ -79,13 +79,13 @@ import CV from "/CV - Tomás Romero.pdf";
       <a id="cont">Contacto</a>
     </li>
   </ul>
-  <ul id="botones" class="linksContainer">
+  <ul class="linksContainer">
     <li>
       <a href={CV} target="_blank" rel="noopener noreferrer">
         <button class="btnCv">
           <span>Descargar</span>CV
           <svg
-            class="svgDownload}"
+            class="svgDownload"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -119,7 +119,7 @@ import CV from "/CV - Tomás Romero.pdf";
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 0 150px;
+    padding: 0 5%;
     position: sticky;
     top: 0;
     right: 0;
@@ -139,7 +139,6 @@ import CV from "/CV - Tomás Romero.pdf";
   }
 
   .effect {
-    color: #2169a6;
     color: white;
     font-family: "Archivo";
     font-style: italic;
@@ -150,6 +149,14 @@ import CV from "/CV - Tomás Romero.pdf";
       logo,
       auto linear;
     animation-timeline: scroll(root block);
+  }
+
+  .effect strong {
+    color: #2169a6;
+    font-family: "Archivo";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
   }
 
   @keyframes logo {
@@ -238,7 +245,20 @@ import CV from "/CV - Tomás Romero.pdf";
   }
 
   .btnCv:hover .svgDownload {
-    transform: translateY(-2px);
+    animation: bouncing 1s;
+  }
+
+  @keyframes bouncing {
+    0%,
+    50% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
   }
 
   .btnCv span {
@@ -269,10 +289,6 @@ import CV from "/CV - Tomás Romero.pdf";
   li {
     list-style: none;
     display: flex;
-  }
-
-  li + li {
-    margin-left: 20px;
   }
 
   a {
