@@ -11,34 +11,27 @@
   </header>
   <div class="contact-container">
     <aside>
+      <img class="img-contact" src="sin.png" alt="" />
       <ul class="redes-list">
         <li>
-          <a href=""
+          <a href="mailto:tomasrom.dev@gmail.com"
             ><i class="fa-regular fa-envelope"></i>tomasrom.dev@gmail.com</a
           >
         </li>
 
         <li>
-          <a href="" target="_blank" rel="noreferrer noopener"
+          <a
+            href="https://wa.me/5491156976553"
+            target="_blank"
+            rel="noreferrer noopener"
             ><i class="fa-brands fa-whatsapp"></i>+54 911 4147-4635</a
           >
         </li>
 
         <li>
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/tom%C3%A1s-alberto-romero-07b117212/"
-            ><i class="fa-brands fa-linkedin"></i>Tomás Romero</a
-          >
-        </li>
-
-        <li>
-          <a
-            rel="noreferrer noopener"
-            href="https://github.com/tomasrome"
-            target="_blank"><i class="fa-brands fa-github"></i>Tomasrome</a
-          >
+          <span>
+            <i class="fa-solid fa-location-dot"></i>Bs.As, Argentina
+          </span>
         </li>
       </ul>
     </aside>
@@ -97,6 +90,11 @@
     align-items: center;
   }
 
+  aside img {
+    width: 300px;
+    filter: drop-shadow(0 0 1em rgba(61, 108, 178, 0.4));
+  }
+
   .header-container {
     position: relative;
   }
@@ -104,6 +102,7 @@
   .titulo {
     font-size: 80px;
     color: rgba(255, 255, 255, 0.04);
+    user-select: none;
   }
 
   .titulo2 {
@@ -117,11 +116,11 @@
   .redes-list {
     color: white;
     list-style: none;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
   }
 
   .redes-list a {
@@ -138,6 +137,7 @@
     font-size: 30px;
     margin-right: 10px;
     transition: color ease 0.3s;
+    color: #3d6cb2;
   }
 
   .redes-list a:hover {
@@ -150,7 +150,7 @@
 
   .form-container {
     width: 150%;
-    height: 500px;
+    height: 550px;
     background-color: #2c3853;
     padding: 25px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.44);
@@ -168,10 +168,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
+    color: black;
   }
 
   .group-form {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,21 +196,22 @@
     border: 1px solid #5d5d5d;
     font-size: 14px;
     padding: 10px;
+    color: black;
   }
 
   .submit {
     display: flex;
-    justify-content: center;
     gap: 10px;
+    width: 100%;
+    justify-content: center;
     align-items: center;
     font-size: 20px;
     padding: 5px;
     cursor: pointer;
-    width: 100%;
     color: white;
     background-color: #355284;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
   }
 
   textarea {
@@ -229,7 +232,7 @@
     background-color: rgba(61, 108, 178);
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     .contact-container {
       display: flex;
       flex-direction: column;

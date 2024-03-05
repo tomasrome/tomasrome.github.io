@@ -11,21 +11,22 @@
 
 <style>
   .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    position: relative;
     height: 893px;
+    background-image: url("def.png");
+    background-size: cover;
+    background-attachment: fixed;
   }
 
-  .foto {
-    width: 1000px;
+  .nombre-container {
+    position: absolute;
+    top: 20vh;
+    left: 30vh;
   }
 
   .tr {
     text-transform: uppercase;
-    font-size: 3.2em;
+    font-size: 4em;
     line-height: 1.1;
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
@@ -36,7 +37,7 @@
   }
 
   .tr strong {
-    color: rgba(61, 108, 178, 0.91);
+    color: #3d6cb2;
     font-family: "Archivo", sans-serif;
     font-weight: 700;
   }
