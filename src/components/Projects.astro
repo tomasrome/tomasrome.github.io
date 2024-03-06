@@ -9,10 +9,11 @@
     delay: 450,
     reset: false,
   });
-
+  sr.reveal(".nombre-container", { delay: 200, origin: "top" });
   sr.reveal(".header-container", { delay: 0, origin: "bot" });
   sr.reveal(".cardSection", { delay: 0, origin: "left" });
   sr.reveal(".skillsContainer", { delay: 0, origin: "left" });
+  sr.reveal(".contact-container", { delay: 200, origin: "left" });
 </script>
 
 <section class="sectionProjects">
@@ -137,13 +138,13 @@
   }
 
   .titulo1 {
-    font-size: 80px;
+    font-size: 5rem;
     color: rgba(255, 255, 255, 0.04);
     user-select: none;
   }
 
   .titulo2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -369,22 +370,49 @@
   }
 
   @media (max-width: 600px) {
-    .cardProject {
-      width: 85%;
-      height: 600px;
-    }
-
-    .cardSection {
-      width: 100%;
+    .sectionProjects {
+      height: 800px;
+      justify-content: start;
     }
 
     .article {
+      justify-content: start;
       width: 100%;
+      height: fit-content;
+      margin-top: 0;
+      gap: 50px;
+    }
+
+    .cardProject {
+      width: 85%;
+    }
+
+    .cardSection {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      height: fit-content;
     }
 
     .divDes {
       padding: 0 20px;
       width: 100%;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .btnContainer {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .divImg {
+      padding-top: 0;
     }
 
     .language {
@@ -394,6 +422,32 @@
     .language li {
       font-size: 10px;
       padding: 2px 3%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .titulo1 {
+      font-size: 4em;
+    }
+
+    .titulo2 {
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .titulo1 {
+      font-size: 4em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .titulo1 {
+      font-size: 2.5em;
+    }
+
+    .titulo2 {
+      font-size: 1.5em;
     }
   }
 </style>

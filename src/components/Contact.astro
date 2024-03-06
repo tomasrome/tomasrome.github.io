@@ -100,13 +100,13 @@
   }
 
   .titulo {
-    font-size: 80px;
+    font-size: 5rem;
     color: rgba(255, 255, 255, 0.04);
     user-select: none;
   }
 
   .titulo2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -241,6 +241,13 @@
       width: 100%;
     }
 
+    .contact-container aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .form-container {
       width: 100%;
       padding: 20px;
@@ -261,6 +268,32 @@
       align-items: center;
       padding: 3em 10%;
       gap: 5px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .titulo {
+      font-size: 4em;
+    }
+
+    .titulo2 {
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .titulo {
+      font-size: 4em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .titulo {
+      font-size: 3.5em;
+    }
+
+    .titulo2 {
+      font-size: 2em;
     }
   }
 </style>

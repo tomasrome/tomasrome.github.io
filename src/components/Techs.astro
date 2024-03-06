@@ -117,13 +117,13 @@
   }
 
   .titulo {
-    font-size: 80px;
+    font-size: 5rem;
     color: rgba(255, 255, 255, 0.04);
     user-select: none;
   }
 
   .titulo2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -452,6 +452,41 @@ border-radius: 20px;
   @media (max-width: 900px) {
     .skillsContainer {
       width: 80%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .skillsContainer {
+      padding: 5px;
+    }
+
+    .skillsContainer header p {
+      font-size: 14px;
+      text-wrap: balance;
+    }
+
+    .titulo {
+      font-size: 4em;
+    }
+
+    .titulo2 {
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .titulo {
+      font-size: 3.5em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .titulo {
+      font-size: 2.5em;
+    }
+
+    .titulo2 {
+      font-size: 1.5em;
     }
   }
 </style>

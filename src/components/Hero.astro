@@ -2,17 +2,6 @@
 
 ---
 
-<script src="https://unpkg.com/scrollreveal">
-  const sr = ScrollReveal({
-    distance: "65px",
-    duration: 2600,
-    delay: 450,
-    reset: true,
-  });
-
-  sr.reveal(".nombre-container", { delay: 200, origin: "top" });
-</script>
-
 <section class="home">
   <div class="nombre-container">
     <h1 class="tr">Tomás <br /> <strong>Romero</strong></h1>
@@ -22,17 +11,19 @@
 
 <style>
   .home {
+    width: 100%;
     position: relative;
-    height: 893px;
+    height: 100vh;
     background-image: url("def.png");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
   }
 
   .nombre-container {
     position: absolute;
-    top: 20vh;
-    left: 30vh;
+    top: 20%;
+    left: 15%;
   }
 
   .tr {
@@ -67,9 +58,34 @@
     text-wrap: balance;
   }
 
-  @media (max-width: 1150px) {
-    .foto {
-      width: 500px;
+  @media (max-width: 1300px) {
+    .home {
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .home {
+      background-image: url("def-mobile.png");
+      background-size: cover;
+    }
+
+    .nombre-container {
+      position: absolute;
+      top: 10%;
+      left: 15%;
+    }
+  }
+
+  @media (max-width: 470px) {
+    .home {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .nombre-container {
     }
   }
 </style>
