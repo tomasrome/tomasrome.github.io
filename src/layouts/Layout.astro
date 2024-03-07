@@ -15,6 +15,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +26,6 @@ const { title } = Astro.props;
   <body>
     <slot />
   </body>
-  <script src="https://unpkg.com/scrollreveal"></script>
   <script
     src="https://kit.fontawesome.com/6c1ab8f124.js"
     crossorigin="anonymous"></script>

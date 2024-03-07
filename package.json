@@ -10,8 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.0",
     "@astrojs/check": "^0.5.4",
+    "astro": "^4.4.0",
+    "scrollreveal": "^4.0.9",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/scrollreveal": "^0.0.11"
   }
 }
