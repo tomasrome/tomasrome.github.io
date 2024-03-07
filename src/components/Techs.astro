@@ -172,6 +172,7 @@
 
   .html {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .html:hover {
@@ -181,6 +182,7 @@
 
   .css {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .css:hover {
@@ -191,6 +193,7 @@
 
   .js {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .js:hover {
@@ -201,6 +204,7 @@
 
   .react {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .react:hover {
@@ -216,6 +220,7 @@ border-radius: 20px;
 
   .node {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .node:hover {
@@ -231,6 +236,7 @@ border-radius: 20px;
 
   .git {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .git:hover {
@@ -240,6 +246,7 @@ border-radius: 20px;
 
   .firebase {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .firebase:hover {
@@ -250,6 +257,7 @@ border-radius: 20px;
 
   .Mysql {
     transition: ease 0.2s;
+    z-index: 10;
   }
 
   .Mysql:hover {
@@ -446,12 +454,141 @@ border-radius: 20px;
 
     .skillsContainer {
       height: 700px;
+      width: 80%;
     }
   }
 
   @media (max-width: 900px) {
-    .skillsContainer {
-      width: 80%;
+    .tooltipTextCss {
+      bottom: 20%;
+      opacity: 0;
+      font-size: 14px;
+      padding: 5px 10px;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextCss {
+      opacity: 1;
+      transform: translatex(-70px);
+    }
+
+    .tooltipTextJs {
+      bottom: 20%;
+      left: 10%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextJs {
+      opacity: 1;
+      transform: translatex(70px);
+    }
+
+    .tooltipTextHtml {
+      bottom: 20%;
+      left: 5%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextHtml {
+      opacity: 1;
+      transform: translatex(70px);
+    }
+
+    .tooltipTextFire {
+      bottom: 20%;
+      font-size: 14px;
+      padding: 5px 10px;
+      left: 10%;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextFire {
+      opacity: 1;
+      transform: translatex(70px);
+    }
+
+    .tooltipTextGit {
+      bottom: 20%;
+      left: 10%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextGit {
+      opacity: 1;
+      transform: translatex(70px);
+    }
+
+    .tooltipTextReact {
+      bottom: 20%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextReact {
+      opacity: 1;
+      transform: translatex(-80px);
+    }
+
+    .tooltipTextNode {
+      bottom: 20%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextNode {
+      opacity: 1;
+      transform: translatex(-80px);
+    }
+
+    .tooltipTextMysql {
+      bottom: 20%;
+      opacity: 0;
+      font-size: 14px;
+      padding: 5px 10px;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextMysql {
+      opacity: 1;
+      transform: translatex(-80px);
     }
   }
 
