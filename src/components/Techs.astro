@@ -45,14 +45,8 @@
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="firebase" src="firebase.svg" alt="Firebase" />
-          <span class="tooltipTextFire">Firebase</span>
-        </div>
-      </div>
-      <div>
-        <div class="tooltipBox">
-          <img class="node" src="node.svg" alt="NodeJs" />
-          <span class="tooltipTextNode">NodeJs</span>
+          <img class="astro" src="astro.svg" alt="Astro" />
+          <span class="tooltipTextAstro">Astro</span>
         </div>
       </div>
       <div>
@@ -63,20 +57,26 @@
       </div>
       <div>
         <div class="tooltipBox">
+          <img class="node" src="node.svg" alt="NodeJs" />
+          <span class="tooltipTextNode">NodeJs</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
           <img class="firebase" src="firebase.svg" alt="Firebase" />
           <span class="tooltipTextFire">Firebase</span>
         </div>
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="css" src="css.svg" alt="CSS" />
-          <span class="tooltipTextCss">CSS</span>
+          <img class="Mysql" src="Mysql.svg" alt="CSS" />
+          <span class="tooltipTextMysql">MySQL</span>
         </div>
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="Mysql" src="Mysql.svg" alt="MySQL" />
-          <span class="tooltipTextMysql">MySQL</span>
+          <img class="oracle" src="oracle.webp" alt="Oracle" />
+          <span class="tooltipTextOracle">Oracle</span>
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@
   }
 
   .js:hover {
-    filter: drop-shadow(0 0 1.5em #f0db4f);
+    filter: drop-shadow(0 0 1.5em #f0db4f75);
     scale: 1.1;
     transition: ease 0.2s;
   }
@@ -244,6 +244,17 @@ border-radius: 20px;
     scale: 1.1;
   }
 
+  .astro {
+    transition: ease 0.2s;
+    z-index: 10;
+  }
+
+  .astro:hover {
+    filter: drop-shadow(0 0 2em #e83cbc);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
   .firebase {
     transition: ease 0.2s;
     z-index: 10;
@@ -262,6 +273,17 @@ border-radius: 20px;
 
   .Mysql:hover {
     filter: drop-shadow(0 0 2em #1572b6);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .oracle {
+    transition: ease 0.2s;
+    z-index: 10;
+  }
+
+  .oracle:hover {
+    filter: drop-shadow(0 0 2em #e7303595);
     scale: 1.1;
     transition: ease 0.2s;
   }
@@ -358,6 +380,28 @@ border-radius: 20px;
     transform: translateY(-10px);
   }
 
+  .tooltipTextAstro {
+    background-color: #e0387328;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #e03873;
+    padding: 5px 20px;
+    color: #e03873;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextAstro {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
   .tooltipTextNode {
     background-color: #83cd2928;
     position: absolute;
@@ -442,6 +486,28 @@ border-radius: 20px;
   }
 
   .tooltipBox:hover .tooltipTextMysql {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextOracle {
+    background-color: #c7463428;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #c74634;
+    padding: 5px 20px;
+    color: #c74634;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextOracle {
     opacity: 1;
     transform: translateY(-10px);
   }
@@ -587,6 +653,22 @@ border-radius: 20px;
     }
 
     .tooltipBox:hover .tooltipTextMysql {
+      opacity: 1;
+      transform: translatex(-80px);
+    }
+
+    .tooltipTextOracle {
+      bottom: 20%;
+      opacity: 0;
+      font-size: 14px;
+      padding: 5px 10px;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextOracle {
       opacity: 1;
       transform: translatex(-80px);
     }
