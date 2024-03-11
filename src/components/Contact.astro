@@ -33,6 +33,7 @@
             <i class="fa-solid fa-location-dot"></i>Bs.As, Argentina
           </span>
         </li>
+        <span class="bar"></span>
       </ul>
     </aside>
     <article>
@@ -233,6 +234,14 @@
     background-color: rgba(61, 108, 178);
   }
 
+  .bar {
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #57637e;
+    display: none;
+  }
+
   @media screen and (max-width: 900px) {
     .contact-container {
       display: flex;
@@ -268,6 +277,10 @@
       align-items: center;
       padding: 3em 10%;
       gap: 5px;
+    }
+
+    .bar {
+      display: block;
     }
   }
 
