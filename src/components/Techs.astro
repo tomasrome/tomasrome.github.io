@@ -63,8 +63,8 @@
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="firebase" src="express.png" alt="Firebase" />
-          <span class="tooltipTextFire">Express</span>
+          <img class="express" src="express.png" alt="Express" />
+          <span class="tooltipTextExpress">Express</span>
         </div>
       </div>
       <div>
@@ -255,12 +255,12 @@ border-radius: 20px;
     transition: ease 0.2s;
   }
 
-  .firebase {
+  .express {
     transition: ease 0.2s;
     z-index: 10;
   }
 
-  .firebase:hover {
+  .express:hover {
     filter: drop-shadow(0 0 1.5em #ffffff48);
     scale: 1.1;
     transition: ease 0.2s;
@@ -446,7 +446,7 @@ border-radius: 20px;
     transform: translateY(-10px);
   }
 
-  .tooltipTextFire {
+  .tooltipTextExpress {
     background-color: #ffffff28;
     position: absolute;
     font-size: 16px;
@@ -463,7 +463,7 @@ border-radius: 20px;
     transition-delay: 0.1s;
   }
 
-  .tooltipBox:hover .tooltipTextFire {
+  .tooltipBox:hover .tooltipTextExpress {
     opacity: 1;
     transform: translateY(-10px);
   }
@@ -544,7 +544,7 @@ border-radius: 20px;
     .tooltipTextJs {
       bottom: 20%;
       left: 10%;
-      font-size: 14px;
+      font-size: 12px;
       padding: 5px 10px;
       opacity: 0;
       transition:
@@ -575,23 +575,6 @@ border-radius: 20px;
       transform: translatex(70px);
     }
 
-    .tooltipTextFire {
-      bottom: 20%;
-      font-size: 14px;
-      padding: 5px 10px;
-      left: 10%;
-      opacity: 0;
-      transition:
-        opacity ease 0.2s,
-        transform ease 0.4s;
-      transition-delay: 0.1s;
-    }
-
-    .tooltipBox:hover .tooltipTextFire {
-      opacity: 1;
-      transform: translatex(70px);
-    }
-
     .tooltipTextGit {
       bottom: 20%;
       left: 10%;
@@ -606,7 +589,24 @@ border-radius: 20px;
 
     .tooltipBox:hover .tooltipTextGit {
       opacity: 1;
-      transform: translatex(70px);
+      transform: translatex(-70px);
+    }
+
+    .tooltipTextExpress {
+      bottom: 20%;
+      left: 10%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextExpress {
+      opacity: 1;
+      transform: translatex(-90px);
     }
 
     .tooltipTextReact {
@@ -638,7 +638,23 @@ border-radius: 20px;
 
     .tooltipBox:hover .tooltipTextNode {
       opacity: 1;
-      transform: translatex(-80px);
+      transform: translatex(80px);
+    }
+
+    .tooltipTextAstro {
+      bottom: 20%;
+      font-size: 14px;
+      padding: 5px 10px;
+      opacity: 0;
+      transition:
+        opacity ease 0.2s,
+        transform ease 0.4s;
+      transition-delay: 0.1s;
+    }
+
+    .tooltipBox:hover .tooltipTextAstro {
+      opacity: 1;
+      transform: translatex(80px);
     }
 
     .tooltipTextMysql {
@@ -654,7 +670,7 @@ border-radius: 20px;
 
     .tooltipBox:hover .tooltipTextMysql {
       opacity: 1;
-      transform: translatex(-80px);
+      transform: translatex(80px);
     }
 
     .tooltipTextOracle {
