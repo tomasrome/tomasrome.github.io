@@ -3,6 +3,21 @@ import CV from "/CV - Tomás Romero.pdf";
 ---
 
 <script>
+  const sr = ScrollReveal({
+    distance: "65px",
+    duration: 2600,
+    delay: 450,
+    reset: false,
+  });
+  sr.reveal(".nombre-container", { delay: 200, origin: "top" });
+  sr.reveal(".header-container", { delay: 0, origin: "right" });
+  sr.reveal(".cardSection", { delay: 0, origin: "left" });
+  sr.reveal(".skillsContainer", { delay: 0, origin: "left" });
+  sr.reveal(".contact-container", { delay: 200, origin: "left" });
+  sr.reveal(".linksContainers", { delay: 500, origin: "left" });
+</script>
+
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     function handleClick() {
       window.scrollTo({

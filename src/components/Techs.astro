@@ -57,8 +57,8 @@
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="node" src="node.svg" alt="NodeJs" />
-          <span class="tooltipTextNode">NodeJs</span>
+          <img class="mongo" src="mongo.svg" alt="MongoDB" />
+          <span class="tooltipTextMongo">MongoDB</span>
         </div>
       </div>
       <div>
@@ -76,7 +76,7 @@
       <div>
         <div class="tooltipBox">
           <img class="oracle" src="oracle.webp" alt="Oracle" />
-          <span class="tooltipTextOracle">Oracle</span>
+          <span class="tooltipTextOracle">OracleDB</span>
         </div>
       </div>
     </div>
@@ -218,13 +218,13 @@ background-color: rgba(131, 205, 41, .05);
 border-radius: 20px;
 }*/
 
-  .node {
+  .mongo {
     transition: ease 0.2s;
     z-index: 10;
   }
 
-  .node:hover {
-    filter: drop-shadow(0 0 2em #83cd29);
+  .mongo:hover {
+    filter: drop-shadow(0 0 2em #13aa52);
     scale: 1.1;
     /*border: 2px solid #83cd29; */
   }
@@ -402,15 +402,15 @@ border-radius: 20px;
     transform: translateY(-10px);
   }
 
-  .tooltipTextNode {
-    background-color: #83cd2928;
+  .tooltipTextMongo {
+    background-color: #13aa5228;
     position: absolute;
     font-size: 16px;
     font-weight: 600;
     bottom: 65px;
-    border: 2px solid #83cd29;
+    border: 2px solid #13aa52;
     padding: 5px 20px;
-    color: #83cd29;
+    color: #13aa52;
     border-radius: 10px;
     opacity: 0;
     transition:
@@ -419,7 +419,7 @@ border-radius: 20px;
     transition-delay: 0.1s;
   }
 
-  .tooltipBox:hover .tooltipTextNode {
+  .tooltipBox:hover .tooltipTextMongo {
     opacity: 1;
     transform: translateY(-10px);
   }
