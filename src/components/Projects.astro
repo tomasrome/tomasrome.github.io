@@ -110,9 +110,9 @@
           <div class="divDes">
             <h2>Attack on Titan API</h2>
             <ul class="language">
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Express</li>
+              <li id="js">JavaScript</li>
+              <li id="react">React</li>
+              <li id="express">Express</li>
               <li>NodeJS</li>
               <li>MongoDB</li>
               <li>Mongoose</li>
@@ -521,6 +521,20 @@
 
     .titulo2 {
       font-size: 1.8em;
+    }
+  }
+
+  @media (max-width: 900px) {
+    #js {
+      display: none;
+    }
+
+    #react {
+      display: none;
+    }
+
+    #express {
+      margin-left: 0;
     }
   }
 </style>
