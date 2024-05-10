@@ -63,6 +63,7 @@ import CV from "/CV - Tomás Romero.pdf";
 </section>
 
 <script>
+  // @ts-nocheck
   function updateUnderline() {
     const navLinks = document.querySelectorAll(".menu a");
     const underline = document.querySelector(".underline");
@@ -71,14 +72,12 @@ import CV from "/CV - Tomás Romero.pdf";
       const sectionId = link.getAttribute("href").substring(1);
       const section = document.getElementById(sectionId);
 
-      if (sectionId === "home") {
-        if (window.scrollY === 0) {
-          underline.style.left = `${link.offsetLeft}px`;
-          underline.style.width = `${link.offsetWidth}px`;
-        }
-      } else if (isElementInViewport(section)) {
-        underline.style.left = `${link.offsetLeft}px`;
-        underline.style.width = `${link.offsetWidth}px`;
+      if (sectionId === "home" && window.scrollY === 0) {
+        underline?.style?.setProperty("left", `${link.offsetLeft}px`);
+        underline?.style?.setProperty("width", `${link.offsetWidth}px`);
+      } else if (section && isElementInViewport(section)) {
+        underline?.style?.setProperty("left", `${link.offsetLeft}px`);
+        underline?.style?.setProperty("width", `${link.offsetWidth}px`);
       }
     });
   }
@@ -136,8 +135,8 @@ import CV from "/CV - Tomás Romero.pdf";
         });
         const underline = document.querySelector(".underline");
         if (underline) {
-          underline.style.left = `${this.offsetLeft}px`;
-          underline.style.width = `${this.offsetWidth}px`;
+          underline.style.setProperty("left", `${this.offsetLeft}px`);
+          underline.style.setProperty("width", `${this.offsetWidth}px`);
         }
       }
     });
