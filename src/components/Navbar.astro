@@ -11,7 +11,7 @@ import CV from "/CV - Tomás Romero.pdf";
   });
   sr.reveal(".nombre-container", { delay: 200, origin: "top" });
   sr.reveal(".cardProject", { delay: 0, origin: "left" });
-  sr.reveal(".cardProject2", { delay: 0, origin: "rigth" });
+  sr.reveal(".cardProject2", { delay: 0, origin: "right" });
   sr.reveal(".skillsContainer", { delay: 0, origin: "left" });
   sr.reveal(".contact-container", { delay: 200, origin: "left" });
   sr.reveal(".linksContainers", { delay: 200, origin: "bottom" });
@@ -77,7 +77,6 @@ import CV from "/CV - Tomás Romero.pdf";
           underline.style.width = `${link.offsetWidth}px`;
         }
       } else if (isElementInViewport(section)) {
-        // Verifica si la sección está en la ventana gráfica
         underline.style.left = `${link.offsetLeft}px`;
         underline.style.width = `${link.offsetWidth}px`;
       }
@@ -135,10 +134,11 @@ import CV from "/CV - Tomás Romero.pdf";
           top: offsetTop,
           behavior: "smooth",
         });
-        document.querySelector(".underline").style.left =
-          `${this.offsetLeft}px`;
-        document.querySelector(".underline").style.width =
-          `${this.offsetWidth}px`;
+        const underline = document.querySelector(".underline");
+        if (underline) {
+          underline.style.left = `${this.offsetLeft}px`;
+          underline.style.width = `${this.offsetWidth}px`;
+        }
       }
     });
   });
@@ -149,8 +149,8 @@ import CV from "/CV - Tomás Romero.pdf";
     position: absolute;
     bottom: 10px;
     height: 2px;
-    background-color: #3d6cb2; /* Color de la barra subrayada */
-    transition: all 0.3s ease; /* Animación de transición */
+    background-color: #3d6cb2;
+    transition: all 0.3s ease;
   }
 
   @font-face {
