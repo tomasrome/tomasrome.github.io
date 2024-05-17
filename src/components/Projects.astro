@@ -358,8 +358,7 @@
   }
 
   .btnContainer {
-    margin-top: 5px;
-    width: 250px;
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -368,16 +367,18 @@
 
   .btnContainer button {
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
     font-family: archivo;
     color: white;
+    width: 100%;
     padding: 0 10px;
     border-radius: 5px;
     background-color: rgba(61, 108, 178, 0.511);
     cursor: pointer;
     transition: background-color ease 0.2s;
     box-shadow: 3px 3px #1f273a;
+    box-sizing: border-box;
   }
 
   .btnContainer button:hover {
@@ -395,7 +396,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 1px;
   }
 
   .web {
@@ -424,6 +425,7 @@
 
     .article {
       width: 60%;
+      height: fit-content;
     }
 
     .cardSection {
@@ -491,11 +493,18 @@
     }
 
     .btnContainer {
-      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 10px;
     }
 
-    #btnwebpc {
-      display: flex;
+    .btnContainer button {
+      padding: 5px 10px;
+    }
+
+    .btnContainer a {
+      width: 100%;
     }
   }
 
