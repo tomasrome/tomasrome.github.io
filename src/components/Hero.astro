@@ -9,11 +9,11 @@
     delay: 450,
     reset: false,
   });
-  sr.reveal(".nombre-container", { delay: 200, origin: "top" });
+  sr.reveal(".nombre-container", { origin: "top" });
   sr.reveal(".cardProject", { delay: 0, origin: "left" });
   sr.reveal(".cardProject2", { delay: 0, origin: "right" });
   sr.reveal(".skillsContainer", { delay: 0, origin: "left" });
-  sr.reveal(".contact-container", { delay: 200, origin: "right" });
+  sr.reveal(".contact-aside", { origin: "rigth" });
   sr.reveal(".linksContainers", { delay: 200, origin: "bottom" });
   sr.reveal(".cardSection2", { delay: 200, origin: "bottom" });
 </script>
@@ -29,7 +29,7 @@
   .home {
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 100svh;
     background-image: url("def.webp");
     background-size: cover;
     background-attachment: fixed;
@@ -85,13 +85,13 @@
     .home {
       background-image: url("def-mobile.webp");
       background-size: cover;
-      height: calc(100svh - 110px);
+
+      height: calc(100svh - 3em);
     }
 
     .nombre-container {
       position: absolute;
-      top: 10%;
-      left: 15%;
+      top: 20%;
     }
   }
 
@@ -101,14 +101,17 @@
       justify-content: start;
       align-items: center;
     }
-
-    .nombre-container {
-    }
   }
 
   @media (max-width: 430px) {
+    .home {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+    }
+
     .nombre-container {
-      left: 14%;
+      position: relative;
     }
 
     .tr {
