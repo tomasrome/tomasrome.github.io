@@ -31,6 +31,22 @@ const { title } = Astro.props;
     crossorigin="anonymous"></script>
 </html>
 
+<script>
+  const sr = ScrollReveal({
+    distance: "65px",
+    duration: 2600,
+    delay: 450,
+    reset: false,
+  });
+  sr.reveal(".nombre-container", { origin: "top" });
+  sr.reveal(".cardProject", { delay: 0, origin: "left" });
+  sr.reveal(".cardProject2", { delay: 0, origin: "right" });
+  sr.reveal(".skillsContainer", { delay: 0, origin: "left" });
+  sr.reveal(".contact-aside", { origin: "rigth" });
+  sr.reveal(".linksContainers", { delay: 200, origin: "bottom" });
+  sr.reveal(".cardSection2", { delay: 200, origin: "bottom" });
+</script>
+
 <style is:global>
   * {
     padding: 0;
