@@ -39,6 +39,12 @@
       </div>
       <div>
         <div class="tooltipBox">
+          <img class="python" src="python.svg" alt="Python" />
+          <span class="tooltipTextPython">Python</span>
+        </div>
+      </div>
+      <div>
+        <div class="tooltipBox">
           <img class="react" src="react.svg" alt="React" />
           <span class="tooltipTextReact">React</span>
         </div>
@@ -69,14 +75,8 @@
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="Mysql" src="Mysql.svg" alt="CSS" />
+          <img class="Mysql" src="Mysql.svg" alt="Mysql" />
           <span class="tooltipTextMysql">MySQL</span>
-        </div>
-      </div>
-      <div>
-        <div class="tooltipBox">
-          <img class="oracle" src="oracle.webp" alt="Oracle" />
-          <span class="tooltipTextOracle">OracleDB</span>
         </div>
       </div>
     </div>
@@ -199,6 +199,17 @@
 
   .js:hover {
     filter: drop-shadow(0 0 1.5em #f0db4f75);
+    scale: 1.1;
+    transition: ease 0.2s;
+  }
+
+  .python {
+    transition: ease 0.2s;
+    z-index: 10;
+  }
+
+  .python:hover {
+    filter: drop-shadow(0 0 2em #2e7aba);
     scale: 1.1;
     transition: ease 0.2s;
   }
@@ -355,6 +366,28 @@ border-radius: 20px;
   }
 
   .tooltipBox:hover .tooltipTextJs {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  .tooltipTextPython {
+    background-color: #fcd12a28;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: 65px;
+    border: 2px solid #fcd12a;
+    padding: 5px 20px;
+    color: #fcd12a;
+    border-radius: 10px;
+    opacity: 0;
+    transition:
+      opacity ease 0.2s,
+      transform ease 0.4s;
+    transition-delay: 0.1s;
+  }
+
+  .tooltipBox:hover .tooltipTextPython {
     opacity: 1;
     transform: translateY(-10px);
   }
