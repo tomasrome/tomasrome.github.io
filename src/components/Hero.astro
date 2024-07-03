@@ -2,6 +2,35 @@
 
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const sr = ScrollReveal({
+      distance: "65px",
+      duration: 2600,
+      reset: false,
+    });
+
+    const elementos = document.querySelectorAll(".nombre-container");
+
+    elementos.forEach((elemento) => {
+      sr.reveal(elemento as HTMLElement, {
+        delay: 200,
+        origin: "top",
+        duration: 2600,
+        distance: "65px",
+        opacity: 0,
+        beforeReveal: (domEl) => {
+          if (domEl instanceof HTMLElement) {
+            domEl.style.transition = "opacity 2s , transform 2s";
+            domEl.style.opacity = "1";
+            domEl.style.transform = "translateY(0)";
+          }
+        },
+      });
+    });
+  });
+</script>
+
 <section id="home" class="home">
   <div class="nombre-container">
     <h1 class="tr">Tomás <br /> <strong>Romero</strong></h1>

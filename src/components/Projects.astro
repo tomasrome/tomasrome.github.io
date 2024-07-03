@@ -20,13 +20,6 @@
                 target="_blank"
                 ><img class="Img" src="actor.jpg" alt="Portfolio Actor" /></a
               >
-              {
-                /*<img
-                className={styles.tomi}
-                src={hover}
-                alt="Portfolio Actor"
-              />*/
-              }
             </div>
           </div>
           <div class="divDes">
@@ -230,6 +223,7 @@
     align-items: center;
     transition: ease 0.4s;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .cardProject2 {
@@ -242,6 +236,7 @@
     align-items: center;
     transition: ease 0.4s;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .cardProject:hover {
@@ -296,24 +291,27 @@
   .divImg {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 0 0 0 20px;
   }
 
   .imgContainer {
     overflow: hidden;
-    border-radius: 15px;
     cursor: pointer;
+    width: 100%;
     aspect-ratio: 16/9;
+  }
+
+  @media (max-width: 1420px) {
+    .imgContainer {
+      aspect-ratio: 0;
+    }
   }
 
   .Img {
     width: 100%;
-    object-fit: cover;
     transition: scale ease 0.4s;
   }
 
@@ -325,7 +323,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 560px;
     align-items: start;
     padding: 1% 5%;
     gap: 10px;
@@ -415,12 +413,22 @@
     }
   }
 
+  @media (max-width: 1715px) {
+    .article {
+      width: 80%;
+    }
+  }
+
   @media (max-width: 1110px) {
     .devsite {
       z-index: 10;
       top: 5px;
       right: 5px;
       border: 2px solid #57637e;
+    }
+
+    .imgContainer {
+      aspect-ratio: 16/9;
     }
 
     .article {

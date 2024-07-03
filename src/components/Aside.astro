@@ -2,6 +2,35 @@
 
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const sr = ScrollReveal({
+      distance: "65px",
+      duration: 2600,
+      reset: false,
+    });
+
+    const elementos = document.querySelectorAll(".linksContainers");
+
+    elementos.forEach((elemento) => {
+      sr.reveal(elemento as HTMLElement, {
+        delay: 50,
+        origin: "bottom",
+        duration: 2600,
+        distance: "65px",
+        opacity: 0,
+        beforeReveal: (domEl) => {
+          if (domEl instanceof HTMLElement) {
+            domEl.style.transition = "opacity 2.6s ease, transform 2.6s ease";
+            domEl.style.opacity = "1";
+            domEl.style.transform = "translateY(0)";
+          }
+        },
+      });
+    });
+  });
+</script>
+
 <aside>
   <ul id="botones" class="linksContainers">
     <li>
