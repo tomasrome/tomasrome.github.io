@@ -31,10 +31,11 @@ jobs:
         run: cp robots.txt dist/
         # Asegúrate de que 'robots.txt' esté en la raíz del repo
 
-      - name: Upload your site
+      - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
           path: dist
+          package-manager: npm
 
   deploy:
     needs: build
