@@ -16,7 +16,7 @@ import CV from "/CV - Tomás Romero.pdf";
 
 <section class="navbar">
   <div class="logoDiv">
-    <img src="/tr-logo.png" class="logo" alt="" />
+    <img id="logo" src="/tr-logo.png" class="logo" alt="" />
     <span class="effect">TOMÁS <strong>ROMERO</strong></span>
   </div>
   <ul class="menu">
@@ -136,6 +136,20 @@ import CV from "/CV - Tomás Romero.pdf";
         }
       }
     });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function handleClick() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    const homeLink = document.querySelector("#logo");
+    if (homeLink) {
+      homeLink.addEventListener("click", handleClick);
+    }
   });
 </script>
 
