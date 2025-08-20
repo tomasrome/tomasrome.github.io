@@ -1,5 +1,6 @@
 ---
-
+import Image from "astro/components/Image.astro";
+import contact from "../../src/assets/sin.webp";
 ---
 
 <section id="cont">
@@ -11,7 +12,14 @@
   </header>
   <div class="contact-container">
     <aside class="contact-aside">
-      <img class="img-contact" src="_astro/sin.webp" alt="" />
+      <Image
+        src={contact}
+        alt="Ilustración de persona usando un celular para comunicarse"
+        width="300"
+        height="250"
+        class="img-contact"
+        loading="eager"
+      />
       <ul class="redes-list">
         <li>
           <a href="mailto:tomasrom.dev@gmail.com"

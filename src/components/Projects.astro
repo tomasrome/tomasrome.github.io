@@ -1,5 +1,7 @@
 ---
-
+import Image from "astro/components/Image.astro";
+import actorImage from "../assets/actor.webp";
+import appiImage from "../assets/appi.webp";
 ---
 
 <section id="pro" class="sectionProjects">
@@ -18,8 +20,15 @@
               <a
                 href="https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/"
                 target="_blank"
-                ><img class="Img" src="actor.jpg" alt="Portfolio Actor" /></a
-              >
+                ><Image
+                  src={actorImage}
+                  alt="Portfolio de actor"
+                  width="600"
+                  height="400"
+                  loading="eager"
+                  class="Img"
+                />
+              </a>
             </div>
           </div>
           <div class="divDes">
@@ -91,7 +100,14 @@
           <div class="divImg">
             <div class="imgContainer">
               <a href="https://tomasrome.github.io/aot-landing/" target="_blank"
-                ><img class="Img" src="appi.jpg" alt="Portfolio Actor" /></a
+                ><Image
+                  src={appiImage}
+                  alt="Appi Attack on Titan"
+                  width="600"
+                  height="380"
+                  loading="eager"
+                  class="Img"
+                /></a
               >
             </div>
           </div>
