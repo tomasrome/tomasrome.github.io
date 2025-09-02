@@ -38,6 +38,7 @@ import CV from "/CV - Tomás Romero.pdf";
       <a href={CV} target="_blank" rel="noopener noreferrer">
         <button class="btnCv">
           <span>Descargar CV</span>
+          <span id="CV">CV</span>
           <svg
             class="svgDownload"
             xmlns="http://www.w3.org/2000/svg"
@@ -309,6 +310,10 @@ import CV from "/CV - Tomás Romero.pdf";
     margin-right: 5px;
   }
 
+  #CV {
+    display: none;
+  }
+
   .linksContainer {
     width: 300px;
     display: flex;
@@ -373,6 +378,10 @@ import CV from "/CV - Tomás Romero.pdf";
 
     .btnCv span {
       display: none;
+    }
+    #CV {
+      display: block;
+      font-size: 16px;
     }
   }
 </style>
