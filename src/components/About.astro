@@ -1,0 +1,157 @@
+---
+import Image from "astro/components/Image.astro";
+import perfilImg from "../assets/perfil2.webp";
+import python from "../assets/python.webp";
+import java from "../assets/java.webp";
+import js from "../assets/js.webp";
+---
+
+<section id="about" class="sectionAbout">
+  <div class="card">
+    <div class="imgContainer">
+      <Image
+        src={perfilImg}
+        alt="Portfolio de actor"
+        loading="lazy"
+        class="img"
+      />
+    </div>
+    <div class="descContainer">
+      <h2>
+        Estudiante avanzado en Tecnicatura Universitaria en Programación | UTN
+      </h2>
+      <p>
+        Apasionado por el desarrollo de software y la resolución de problemas
+        complejos. <br />Siempre en busca de nuevos desafíos que me permitan
+        aprender y crecer como profesional
+      </p>
+      <div class="techsContainer">
+        <ul>
+          <li id="python">
+            <Image
+              src={python}
+              alt="Portfolio de actor"
+              loading="lazy"
+              class="img"
+            />
+          </li>
+          <li>
+            <li id="python">
+              <Image
+                src={java}
+                alt="Portfolio de actor"
+                loading="lazy"
+                class="img"
+              />
+            </li>
+            <li>
+              <li id="python">
+                <Image
+                  src={js}
+                  alt="Portfolio de actor"
+                  loading="lazy"
+                  class="img"
+                />
+              </li>
+              <li>
+                <li id="python">
+                  <Image
+                    src={python}
+                    alt="Portfolio de actor"
+                    loading="lazy"
+                    class="img"
+                  />
+                </li>
+                <li>
+                  <li id="python">
+                    <Image
+                      src={python}
+                      alt="Portfolio de actor"
+                      loading="lazy"
+                      class="img"
+                    />
+                  </li>
+                  <li>
+                    <li id="python">
+                      <Image
+                        src={python}
+                        alt="Portfolio de actor"
+                        loading="lazy"
+                        class="img"
+                      />
+                    </li>
+                  </li>
+                </li>
+              </li>
+            </li>
+          </li>
+
+          <style>
+            .sectionAbout {
+              width: 100%;
+              height: 400px;
+              background-color:;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .card {
+              width: 80%;
+              height: 350px;
+              background-color: #2c3853;
+              border: 5px solid #57637e;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .imgContainer {
+              width: 40%;
+              background-color: aliceblue;
+              height: 100%;
+              overflow: hidden;
+            }
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .descContainer {
+              width: 60%;
+              height: 100%;
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+            }
+
+            h2 {
+              font-size: 30px;
+              margin-bottom: 20px;
+            }
+
+            p {
+              font-size: 18px;
+              margin-bottom: 50px;
+            }
+
+            ul {
+              display: flex;
+              list-style: none;
+              justify-content: start;
+              align-items: center;
+              gap: 15px;
+            }
+
+            #python {
+              width: 40px;
+            }
+          </style>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
