@@ -134,6 +134,7 @@ import mysql from "../assets/mysql.webp";
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: start;
   }
 
@@ -164,6 +165,16 @@ import mysql from "../assets/mysql.webp";
 
   .techs {
     width: 40px;
+  }
+
+  @media (min-width: 1600px) {
+    .card {
+      width: 70%;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 
   @media (max-width: 1120px) {
