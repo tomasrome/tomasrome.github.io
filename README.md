@@ -1,8 +1,13 @@
-# <img src="public/tr-logo.png" alt="Portfolio Actor" width="60" />  Tomás Romero – Software Developer
+# <img src="public/tr-logo.png" alt="Tomás Romero Logo" width="60" /> Tomás Romero – Portfolio Personal
 
-Este repositorio contiene el código fuente de mi **Portfolio Web personal**, desarrollado para mostrar mi trayectoria, proyectos y tecnologías en las que tengo experiencia.  
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-tomasrome.github.io-blue?style=for-the-badge)](https://tomasrome.github.io)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-success?style=for-the-badge&logo=github)](https://tomasrome.github.io)
 
-🔗 **Versión online:** [tomasrome.github.io](https://tomasrome.github.io)  
+> **Portfolio web personal** desarrollado con tecnologías modernas para mostrar mi trayectoria profesional, proyectos destacados y stack tecnológico como Software Developer.
+
+## Demo en vivo
+
+Podés explorar el portfolio completo en: **[tomasrome.github.io](https://tomasrome.github.io)**
 
 ---
 
@@ -67,6 +72,14 @@ También podes descargar mi CV o visitar mis perfiles profesionales:
 
 ---
 
-¡Gracias por visitar mi portfolio! Quedo atento a cualquier consulta o colaboración.  
-— Tomás Romero
+<div align="center">
+
+**¡Gracias por visitar mi portfolio!** 🚀
+
+_Desarrollado con ❤️ por [Tomás Romero](https://github.com/tomasrome)_
+
+[![GitHub stars](https://img.shields.io/github/stars/tomasrome/tomasrome.github.io?style=social)](https://github.com/tomasrome/tomasrome.github.io/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/tomasrome/tomasrome.github.io?style=social)](https://github.com/tomasrome/tomasrome.github.io/network)
+
+</div>
 
