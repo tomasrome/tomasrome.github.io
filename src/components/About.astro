@@ -172,9 +172,130 @@ import mysql from "../assets/mysql.webp";
     }
   }
 
+  
+
   @media (max-width: 1120px) {
-    #about {
-      display: none;
+
+    #about{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
     }
+
+    .card{
+      flex-direction: column;
+      width: 70%;
+      height: fit-content;
+      margin: 10vh 0;
+    }
+
+    .imgContainer {
+    width: 100%;
+    height: 400px;
   }
+
+  .descContainer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .techsContainer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .techsContainer{
+    width: 100%;
+  }
+
+  #bar {
+    width: 100%;
+  }
+    h2{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+
+    @media (max-width: 550px) {
+
+      #about{
+        margin: 10vh 0 0 0;
+      }
+
+      .descContainer{
+        padding: 10px;
+      }
+
+      .imgContainer {
+    height: 250px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+      .techsContainer ul{
+        gap: 5px;
+      }
+
+    }
+
+    @media (max-width: 378px) {
+
+      h2{
+        font-size: 14px;
+      }
+
+      p{
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+
+    #about{
+      height: 1200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card{
+      height: fit-content; 
+      justify-content: start;
+    }
+
+    .descContainer{
+      height: 40%;
+      width: 90%;
+      padding: 0;
+      margin: 10px;
+    }
+
+    h2{
+      font-size: 30px;
+    }  
+    p {
+      font-size: 18px;
+    }
+}
+    
+
 </style>
