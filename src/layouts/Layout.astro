@@ -26,6 +26,11 @@ interface Props {
     <meta name="generator" content={Astro.generator} />
     <title>Tomás Romero - Desarrollador de Software</title>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <slot />
@@ -33,8 +38,6 @@ interface Props {
 </html>
 
 <style is:global>
-  @import "@fortawesome/fontawesome-free/css/all.min.css";
-
   * {
     padding: 0;
     margin: 0;
