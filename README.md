@@ -1,4 +1,4 @@
-# <img src="public/tr-logo.png" alt="Tomás Romero Logo" width="60" /> Tomás Romero – Portfolio Personal
+# <img src="public/images/tr-logo.png" alt="Tomás Romero Logo" width="60" /> Tomás Romero – Portfolio Personal
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-tomasrome.github.io-blue?style=for-the-badge)](https://tomasrome.github.io)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-success?style=for-the-badge&logo=github)](https://tomasrome.github.io)
