@@ -3,7 +3,7 @@
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-tomasrome.github.io-blue?style=for-the-badge)](https://tomasrome.github.io)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-success?style=for-the-badge&logo=github)](https://tomasrome.github.io)
 
-> **Portfolio web personal** desarrollado con tecnologías modernas para mostrar mi trayectoria profesional, proyectos destacados y stack tecnológico como Software Developer.
+> **Portfolio web personal** desarrollado con Astro para mostrar mi trayectoria profesional, proyectos destacados y stack tecnológico como Software Developer.
 
 ## Demo en vivo
 
