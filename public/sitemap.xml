@@ -1,32 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://tomasrome.github.io/</loc>
   <lastmod>2024-07-09T22:53:23+00:00</lastmod>
   <priority>1.00</priority>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/images/perfil2.webp</image:loc>
+    <image:title>Tomás Romero - Programador y desarrollador de software</image:title>
+    <image:caption>Foto profesional de Tomás Romero, estudiante de Tecnicatura Universitaria en Programación UTN, especializado en Python, JavaScript y React</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/images/screen-1.jpg</image:loc>
+    <image:title>Imagen principal del sitio</image:title>
+    <image:caption>Imagen de bienvenida del portfolio</image:caption>
+  </image:image>
 </url>
+
 <url>
   <loc>https://tomasrome.github.io/CV%20-%20Tom%C3%A1s%20Romero.pdf</loc>
   <lastmod>2024-07-09T22:53:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/</loc>
   <lastmod>2024-07-09T22:13:31+00:00</lastmod>
   <priority>0.80</priority>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/gallery/tomas-flores-actor-escena-teatro-thumb-2.webp</image:loc>
+    <image:title>Tomás Flores - Headshot profesional 1</image:title>
+    <image:caption>Fotografía profesional para castings</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/tomas-flores-actor-about.webp</image:loc>
+    <image:title>Tomás Flores - Headshot profesional 2</image:title>
+    <image:caption>Fotografía profesional para castings - perfil</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/gallery/tomas-flores-actor-escena-teatro-thumb-9.webp</image:loc>
+    <image:title>Tomás Flores en obra teatral</image:title>
+    <image:caption>Fotografía de actuación en teatro</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/Tomas-Flores-Actor-Portfolio/gallery/tomas-flores-actor-escena-teatro-thumb-1.webp</image:loc>
+    <image:title>Tomás Flores - Escena teatral</image:title>
+    <image:caption>Actuando en obra de teatro</image:caption>
+  </image:image>
 </url>
+
 <url>
   <loc>https://tomasrome.github.io/aot-landing/</loc>
   <lastmod>2024-05-15T22:37:21+00:00</lastmod>
   <priority>0.80</priority>
+  <image:image>
+    <image:loc>https://tomasrome.github.io/images/appi.jpg</image:loc>
+    <image:title>Attack on Titan - Banner principal</image:title>
+    <image:caption>Imagen principal de la landing page de Attack on Titan</image:caption>
+  </image:image>
 </url>
-
 
 </urlset>

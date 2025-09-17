@@ -1,6 +1,5 @@
 ---
 import Image from "astro/components/Image.astro";
-import perfilImg from "../assets/perfil2.webp";
 import python from "../assets/python.webp";
 import java from "../assets/java.webp";
 import js from "../assets/js.webp";
@@ -12,12 +11,11 @@ import mysql from "../assets/mysql.webp";
 <section id="about" class="sectionAbout">
   <div class="card">
     <div class="imgContainer">
-      <Image
-        src={perfilImg}
-        alt="Tomás Romero, programador y desarrollador de software, estudiante de la Tecnicatura Universitaria en Programación UTN especializado en Python, JavaScript y React"
-        loading="lazy"
-        class="img"
-      />
+      <img
+      src="public/images/perfil2.webp"
+      class="img"
+      alt="Tomás Romero, programador y desarrollador de software, estudiante de la Tecnicatura Universitaria en Programación UTN especializado en Python, JavaScript y React"
+    />
     </div>
     <div class="descContainer">
       <h2>
