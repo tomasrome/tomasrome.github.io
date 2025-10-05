@@ -3,7 +3,7 @@ import sitemap from "astro-sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tomasrome.github.io",
+  site: "https://romerotomas.com",
   integrations: [sitemap()],
 
   build: {

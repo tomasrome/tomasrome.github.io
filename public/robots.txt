@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://tomasrome.github.io/sitemap.xml
+Sitemap: https://romerotomas.com/sitemap.xml
