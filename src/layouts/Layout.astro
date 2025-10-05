@@ -16,6 +16,7 @@ interface Props {
       name="keywords"
       content="Tomás Romero, desarrollador, Argentina, UTN, UTN Avellaneda, Full Stack, React, Node.js, MongoDB, portfolio"
     />
+    <meta property="og:locale" content="es_AR" />
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="index, follow" />
     <meta
@@ -31,6 +32,50 @@ interface Props {
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       crossorigin="anonymous"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tomás Romero",
+        "jobTitle": "Desarrollador Web",
+        "nationality": "Argentina",
+        "birthPlace": "Buenos Aires",
+        "url": "https://romerotomas.com",
+        "image": "https://romerotomas.com/images/perfil2.webp",
+        "email": "mailto:tomasrom.dev@gmail.com",
+        "knowsAbout": [
+          "Desarrollo Web",
+          "Frontend",
+          "Backend,"
+          "JavaScript",
+          "Python",
+          "Java",
+          "React",
+          "HTML",
+          "CSS",
+          "SQL",
+          "MongoDB"
+        ],
+        "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Tecnológica Nacional (UTN)",
+          "url": "https://www.utn.edu.ar/"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro de e-Learning UTN FRBA",
+          "url": "https://sceu.frba.utn.edu.ar/e-learning/"
+        }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/tomas-romero-developer/",
+          "https://github.com/tomasrome",
+          "https://www.instagram.com/tomas_rom/",
+          "https://www.codewars.com/users/tomasrome"
+        ]
+      }
+    </script>
   </head>
   <body>
     <slot />
