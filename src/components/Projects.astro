@@ -2,6 +2,7 @@
 import Image from "astro/components/Image.astro";
 import actorImage from "../assets/actor2.jpg";
 import appiImage from "../assets/appi.webp";
+import juegoGameplay from "../assets/gameplay.gif";
 import juegoImage from "../assets/jottem.webp";
 ---
 
@@ -101,12 +102,24 @@ import juegoImage from "../assets/jottem.webp";
                 href="https://github.com/tomasrome/jotems-redemption-project"
                 target="_blank"
                 ><Image
-                  src={juegoImage}
-                  alt="Jottem´s Redemption"
+                  src={juegoGameplay}
+                  alt="Jottem´s Redemption gameplay"
                   width="600"
                   height="400"
                   loading="eager"
-                  class="Img"
+                  class="Img gif"
+                /></a
+              >
+              <a
+                href="https://github.com/tomasrome/jotems-redemption-project"
+                target="_blank"
+                ><Image
+                  src={juegoImage}
+                  alt="Jottem´s Redemption menu"
+                  width="600"
+                  height="400"
+                  loading="eager"
+                  class="Img image"
                 /></a
               >
             </div>
@@ -413,6 +426,10 @@ import juegoImage from "../assets/jottem.webp";
 
   .Img:hover {
     scale: 1.2;
+  }
+
+  .image {
+    display: none;
   }
 
   .divDes {
