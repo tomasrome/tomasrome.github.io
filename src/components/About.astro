@@ -19,14 +19,29 @@ import mysql from "../assets/mysql.webp";
     </div>
     <div class="descContainer">
       <h2>
-        Estudiante avanzado en Tecnicatura Universitaria en Programación | UTN
+        Estudiante Avanzado en Tecnicatura Universitaria en Programación | UTN
       </h2>
       <span id="bar"></span>
       <p>
-        Apasionado por el desarrollo de software y la resolución de problemas
-        complejos. <br />Siempre en busca de nuevos desafíos que me permitan
-        aprender y crecer como profesional
+      Apasionado por el desarrollo de software y la resolución de problemas complejos.
       </p>
+      <div class="estudiosContainer">
+        <div>
+          <span class="estudiosTiempo">ESTUDIANDO AHORA</span>
+          <p>Tec. Univ. en Programación</p>
+          <span class="estudiosUniversidad">UTN - Último cuatrimestre</span>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-down"></i>
+        <div>
+          <span class="estudiosTiempo"    >PRÓXIMO PASO</span>
+          <p>Lic. en Ciencias de Datos (CCC)</p>
+          <span class="estudiosUniversidad">Universidad de la Ciudad de Buenos Aires</span>
+        </div>
+      </div>
+      <!-- <p>
+      Apasionado por el desarrollo de software y la resolución de problemas complejos. Actualmente cursando el <b>último cuatrimestre</b> de la Tecnicatura Universitaria en Programación en la UTN, con planes de continuar hacia la <b>Licenciatura en Ciencias de Datos</b> en la Universidad de la Ciudad de Buenos Aires.
+      </p> -->
       <div class="techsContainer">
         <ul>
           <li id="python" class="techs">
@@ -82,8 +97,27 @@ import mysql from "../assets/mysql.webp";
               </li>
             </li>
           </li>
+          <!-- <button class="btnCv">
+          <title>Descargar CV</title>
+          <span>Descargar CV</span>
+          <svg
+            class="svgDownload"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            aria-label="download"
+          >
+            <path
+              fill="currentColor"
+              d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"
+            ></path>
+          </svg>
+        </button> -->
         </ul>
+        
       </div>
+      
     </div>
   </div>
 </section>
@@ -99,14 +133,21 @@ import mysql from "../assets/mysql.webp";
   }
 
   .card {
-    width: 80%;
-    height: 350px;
-    background-color: #2c3853;
-    border: 5px solid #57637e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 80%;
+  height: 450px;
+  background: rgba(44, 56, 83, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); 
+  border: 4px solid rgba(120, 180, 255, 0.3);
+  box-shadow:
+    0 0 25px rgba(0, 200, 255, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
   .imgContainer {
     width: 40%;
@@ -133,19 +174,66 @@ import mysql from "../assets/mysql.webp";
 
   h2 {
     font-size: 30px;
-    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
   }
 
   #bar {
-    border: 2px solid #1f273a;
-    width: 90%;
+    border: 2px solid #ffffff8d;
+    width: 100%;
     height: 2px;
-    margin-bottom: 15px;
   }
 
   p {
     font-size: 16px;
-    margin-bottom: 30px;
+  }
+
+
+  .estudiosContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .estudiosContainer div{
+    background-color: rgba(250, 235, 215, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .estudiosTiempo{
+    color: rgba(120, 180, 255);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .estudiosContainer p{
+    font-weight: bold;
+    color: rgb(229, 229, 229);
+  }
+
+  .estudiosUniversidad{
+    color: rgba(148, 174, 213)
+  }
+
+  .fa-arrow-right{
+    font-size: 30px;
+    color: rgba(120, 180, 255);
+    transition: all .2s ease;
+  }
+
+  .fa-arrow-down{
+    display: none;
+    font-size: 30px;
+    color: rgba(120, 180, 255);
+    transition: all .2s ease;
+  }
+
+  .fa-arrow-right:hover{
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
   }
 
   ul {
@@ -158,6 +246,22 @@ import mysql from "../assets/mysql.webp";
 
   .techs {
     width: 40px;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: "Archivo";
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 3px 20px;
+    background-color: rgb(61, 108, 178);
+    border-radius: 5px;
+    border: none;
+    transition: all ease 0.4s;
   }
 
   @media (min-width: 1600px) {
@@ -183,7 +287,7 @@ import mysql from "../assets/mysql.webp";
 
     .card{
       flex-direction: column;
-      width: 70%;
+      width: 80%;
       height: fit-content;
       margin: 10vh 0;
     }
@@ -226,6 +330,16 @@ import mysql from "../assets/mysql.webp";
       font-size: 14px;
     }
 
+    .fa-arrow-right{
+      display: none;
+    }
+
+    .fa-arrow-down{
+      display: block;
+      margin: 10px;
+    }
+    
+
 
     @media (max-width: 550px) {
 
@@ -233,27 +347,41 @@ import mysql from "../assets/mysql.webp";
         margin: 10vh 0 0 0;
       }
 
+      .card{
+        height: 700px;
+      }
+
       .descContainer{
-        padding: 10px;
+        padding: 15px;
       }
 
       .imgContainer {
-    height: 250px;
+        height: 250px;
+
   }
 
-  h2{
-    font-size: 18px;
-  }
-
-  p{
-    font-size: 14px;
-  }
-
-      .techsContainer ul{
-        gap: 5px;
+      h2{
+        font-size: 18px;
+        width: 100%;
       }
 
-    }
+      p{
+        font-size: 14px;
+      }
+
+          .techsContainer ul{
+            gap: 5px;
+          }
+
+        }
+
+      .estudiosContainer{
+        flex-direction: column;
+      }
+
+      .estudiosContainer div{
+        width: 100%;
+      }
 
     @media (max-width: 378px) {
 
@@ -293,6 +421,8 @@ import mysql from "../assets/mysql.webp";
     p {
       font-size: 18px;
     }
+
+    
 }
     
 
