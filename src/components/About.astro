@@ -21,23 +21,28 @@ import mysql from "../assets/mysql.webp";
       <h2>
         Estudiante Avanzado en Tecnicatura Universitaria en Programación | UTN
       </h2>
+      <img src="images/utn-logo.png" class="logo-img" alt="UTN logo">
       <span id="bar"></span>
       <p>
       Apasionado por el desarrollo de software y la resolución de problemas complejos.
       </p>
       <div class="estudiosContainer">
-        <div>
-          <span class="estudiosTiempo">ESTUDIANDO AHORA</span>
-          <p>Tec. Univ. en Programación</p>
-          <span class="estudiosUniversidad">UTN - Último cuatrimestre</span>
-        </div>
+        <a href="https://fra.utn.edu.ar/tup/" target="_blank">
+          <div>
+            <span class="estudiosTiempo">ESTUDIANDO AHORA</span>
+            <p>Tec. Univ. en Programación</p>
+            <span class="estudiosUniversidad">UTN - Último cuatrimestre</span>
+          </div>
+        </a>
         <i class="fa-solid fa-arrow-right"></i>
         <i class="fa-solid fa-arrow-down"></i>
-        <div>
-          <span class="estudiosTiempo"    >PRÓXIMO PASO</span>
-          <p>Lic. en Ciencias de Datos (CCC)</p>
-          <span class="estudiosUniversidad">Universidad de la Ciudad de Buenos Aires</span>
-        </div>
+        <a href="https://www.udelaciudad.edu.ar/licenciatura-en-ciencia-de-datos/" target="_blank">
+          <div>
+            <span class="estudiosTiempo"    >PRÓXIMO PASO</span>
+            <p>Lic. en Ciencias de Datos (CCC)</p>
+            <span class="estudiosUniversidad">Universidad de la Ciudad de Buenos Aires</span>
+          </div>
+        </a>
       </div>
       <!-- <p>
       Apasionado por el desarrollo de software y la resolución de problemas complejos. Actualmente cursando el <b>último cuatrimestre</b> de la Tecnicatura Universitaria en Programación en la UTN, con planes de continuar hacia la <b>Licenciatura en Ciencias de Datos</b> en la Universidad de la Ciudad de Buenos Aires.
@@ -175,7 +180,14 @@ import mysql from "../assets/mysql.webp";
   h2 {
     font-size: 30px;
     font-weight: bold;
-    width: 100%;
+    width: 98%;
+  }
+
+  .logo-img{
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top:15px;
   }
 
   #bar {
@@ -201,6 +213,12 @@ import mysql from "../assets/mysql.webp";
     background-color: rgba(250, 235, 215, 0.05);
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+  }
+  
+
+  .estudiosContainer div:hover{
+    background-color: rgba(255, 255, 255, 0.166);
   }
 
   .estudiosTiempo{
@@ -228,11 +246,10 @@ import mysql from "../assets/mysql.webp";
     display: none;
     font-size: 30px;
     color: rgba(120, 180, 255);
-    transition: all .2s ease;
+    transition: color .2s ease;
   }
 
   .fa-arrow-right:hover{
-    transform: scale(1.2);
     color: rgb(255, 255, 255);
   }
 
@@ -312,6 +329,18 @@ import mysql from "../assets/mysql.webp";
     display: flex;
     justify-content: space-evenly;
     gap: 0;
+  }
+
+
+
+  .logo-img{
+    right: 0;
+    top: 0;
+    opacity: 80%;
+  }
+
+  .estudiosContainer a{
+    width: 100%;
   }
 
   .techsContainer{
