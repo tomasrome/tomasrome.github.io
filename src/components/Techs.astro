@@ -21,14 +21,14 @@ import express from "../assets/express.webp";
     <div class="skillsList">
       <div>
         <div class="tooltipBox">
-          <img class="html" src="icons/html.svg" alt=" HTML" />
-          <span class="tooltipTextHtml">HTML</span>
+          <img class="java" src="icons/java.svg" alt="Java" />
+          <span class="tooltipTextJava">Java</span>
         </div>
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="css" src="icons/css.svg" alt="CSS" />
-          <span class="tooltipTextCss">CSS</span>
+          <img class="python" src="icons/python.svg" alt="Python" />
+          <span class="tooltipTextPython">Python</span>
         </div>
       </div>
       <div>
@@ -45,14 +45,14 @@ import express from "../assets/express.webp";
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="python" src="icons/python.svg" alt="Python" />
-          <span class="tooltipTextPython">Python</span>
+          <img class="angular" src="icons/angular.svg" alt="Angular" />
+          <span class="tooltipTextAngular">Angular</span>
         </div>
       </div>
       <div>
         <div class="tooltipBox">
-          <img class="java" src="icons/java.svg" alt="Java" />
-          <span class="tooltipTextJava">Java</span>
+          <img class="nest" src="icons/nestjs.svg" alt=" NestJS" />
+          <span class="tooltipTextNest">NestJS</span>
         </div>
       </div>
       <div>
@@ -190,23 +190,23 @@ import express from "../assets/express.webp";
     width: 60px;
   }
 
-  .html {
+  .nest {
     transition: ease 0.2s;
     z-index: 10;
   }
 
-  .html:hover {
-    filter: drop-shadow(0 0 2em #e44d26);
+  .nest:hover {
+    filter: drop-shadow(0 0 2em #e0234e);
     scale: 1.1;
   }
 
-  .css {
+  .angular {
     transition: ease 0.2s;
     z-index: 10;
   }
 
-  .css:hover {
-    filter: drop-shadow(0 0 2em #1572b6);
+  .angular:hover {
+    filter: drop-shadow(0 0 2em #e23237);
     scale: 1.1;
     transition: ease 0.2s;
   }
@@ -323,15 +323,15 @@ border-radius: 20px;
     position: relative;
   }
 
-  .tooltipTextCss {
-    background-color: #33a9dc28;
+  .tooltipTextAngular {
+    background-color: #e2323728;
     position: absolute;
     font-size: 16px;
     font-weight: 600;
     bottom: 65px;
-    border: 2px solid #33a9dc;
+    border: 2px solid #e23237;
     padding: 5px 20px;
-    color: #33a9dc;
+    color: #e23237;
     border-radius: 10px;
     opacity: 0;
     transition:
@@ -340,20 +340,20 @@ border-radius: 20px;
     transition-delay: 0.1s;
   }
 
-  .tooltipBox:hover .tooltipTextCss {
+  .tooltipBox:hover .tooltipTextAngular {
     opacity: 1;
     transform: translateY(-10px);
   }
 
-  .tooltipTextHtml {
-    background-color: #e44d2628;
+  .tooltipTextNest {
+    background-color: #e0234e28;
     position: absolute;
     font-size: 16px;
     font-weight: 600;
     bottom: 65px;
-    border: 2px solid #e44d26;
+    border: 2px solid #e0234e;
     padding: 5px 20px;
-    color: #e44d26;
+    color: #e0234e;
     border-radius: 10px;
     opacity: 0;
     transition:
@@ -362,7 +362,7 @@ border-radius: 20px;
     transition-delay: 0.1s;
   }
 
-  .tooltipBox:hover .tooltipTextHtml {
+  .tooltipBox:hover .tooltipTextNest {
     opacity: 1;
     transform: translateY(-10px);
   }
@@ -576,7 +576,7 @@ border-radius: 20px;
       width: 80%;
     }
 
-    .tooltipTextCss {
+    .tooltipTextAngular {
       bottom: 20%;
       opacity: 0;
       font-size: 14px;
@@ -587,7 +587,7 @@ border-radius: 20px;
       transition-delay: 0.1s;
     }
 
-    .tooltipBox:hover .tooltipTextCss {
+    .tooltipBox:hover .tooltipTextAngular {
       opacity: 1;
       transform: translatex(-70px);
     }
@@ -609,7 +609,7 @@ border-radius: 20px;
       transform: translatex(70px);
     }
 
-    .tooltipTextHtml {
+    .tooltipTextNest {
       bottom: 20%;
       left: 5%;
       font-size: 14px;
@@ -621,7 +621,7 @@ border-radius: 20px;
       transition-delay: 0.1s;
     }
 
-    .tooltipBox:hover .tooltipTextHtml {
+    .tooltipBox:hover .tooltipTextNest {
       opacity: 1;
       transform: translatex(70px);
     }
