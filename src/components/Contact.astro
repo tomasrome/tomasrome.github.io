@@ -64,6 +64,18 @@ import contact from "../../src/assets/sin.webp";
             <textarea name="message" id="message" cols="30" rows="10"
             ></textarea>
           </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label for="phone">Teléfono</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+
           <input name="_formsubmit_id" type="text" style="display:none" />
           <button class="submit" type="submit"
             >Enviar <i class="fa-solid fa-paper-plane"></i>
@@ -249,6 +261,12 @@ import contact from "../../src/assets/sin.webp";
     height: 2px;
     background-color: #57637e;
     display: none;
+  }
+
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
   }
 
   @media screen and (max-width: 900px) {
