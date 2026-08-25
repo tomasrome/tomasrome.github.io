@@ -20,10 +20,19 @@ interface Props {
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="index, follow" />
     <meta name="darkreader-lock" content="true" />
+    
     <meta
       name="google-site-verification"
       content="K7YDAjcGIFc5_WPW6xF3iKEOZElXS0xR-KqZvgshaj8"
     />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0KE7WRM6M"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H0KE7WRM6M');
+</script>
     <link rel="icon" type="image/svg+xml" href="tr-logo2.ico" />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href="https://romerotomas.com/" />
@@ -78,7 +87,9 @@ interface Props {
         ]
       }
     </script>
+    
   </head>
+  
   <body>
     <slot />
   </body>
